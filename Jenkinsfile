@@ -87,6 +87,7 @@ pipeline {
                     echo "Pushing Docker Image to ECR: ${env.ECR_IMAGE_NAME}"
                     sh "docker push ${env.ECR_IMAGE_NAME}"
                     echo "Docker Image Push to ECR Completed"
+                }
             }
         }
     }
