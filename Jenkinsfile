@@ -7,7 +7,7 @@ pipeline {
         ECR_URL = "${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com"
         IMAGE_NAME = "tejas410/demo-application:demo-application-v.1.${env.BUILD_NUMBER}"
         ECR_IMAGE_NAME = "${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/demo-application:demo-application-v.1.${env.BUILD_NUMBER}"
-
+        NEXUS_IMAGE_NAME = "3.110.186.236:8085/demo-application:demo-application-v.1.${env.BUILD_NUMBER}"
     }
 
     options {
